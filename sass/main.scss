@@ -17,7 +17,9 @@ body {
 	padding: 1.5em;
 	font-family: "Red Hat Display", sans-serif;
 	font-size: 16px;
-	background-color: var(--pale-blue);
+	background-color: hsl(225, 100%, 94%);
+	background-image: url("../img/pattern-background-mobile.svg");
+	background-size: cover;
 }
 
 .card {
@@ -103,6 +105,10 @@ body {
 }
 
 @media (min-width: 992px) {
+	body {
+		background-image: url("../img/pattern-background-desktop.svg");
+	}
+
 	.card {
 		max-width: 400px;
 		&__bottom {
@@ -146,6 +152,3 @@ body {
 		}
 	}
 }
-
-// - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
-// - Weights: 500, 700, 900
